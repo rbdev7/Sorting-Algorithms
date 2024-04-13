@@ -145,7 +145,7 @@ if (args.Length > 0)
     catch (System.FormatException ex)
     {
         Console.WriteLine(ex.Message);
-        Console.WriteLine("Usage: SortingAlgorithms.exe <number of items to sort>");
+        Console.WriteLine("Usage: SortingAlgorithms.exe <size_of_array>");
         Environment.Exit(1);
     }
 }
