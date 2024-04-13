@@ -10,7 +10,7 @@ At the command line type:
 
 `SortingAlgorithms.exe <size_of_array>`
 
-If the siz_of_array argument is not entered the array size defaults to 1000.
+If the size_of_array argument is not entered the array size defaults to 1000.
 
 ## Findings
 The results of running each sorting algorithm with different array sizes:
@@ -24,7 +24,7 @@ Algorithm: Merge Sort, Time: 1ms
 Algorithm: Heap Sort, Time: 0ms  
 Algorithm: C Sharp Sort, Time: 2ms
 
-### Number of items to sort: 10000
+### Number of items to sort: 10,000
 Algorithm: Bubble Sort, Time: 245ms  
 Algorithm: Quick Sort, Time: 57ms  
 Algorithm: Selection Sort, Time: 71ms  
@@ -33,7 +33,7 @@ Algorithm: Merge Sort, Time: 11ms
 Algorithm: Heap Sort, Time: 6ms  
 Algorithm: C Sharp Sort, Time: 1ms
 
-### Number of items to sort: 100000
+### Number of items to sort: 100,000
 Algorithm: Bubble Sort, Time: 27324ms  
 Algorithm: Quick Sort, Time: 617ms  
 Algorithm: Selection Sort, Time: 6915ms  
