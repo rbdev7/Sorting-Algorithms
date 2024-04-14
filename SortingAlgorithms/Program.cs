@@ -1,6 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using SortingAlgorithms;
 
 int arraySize = 1000;
@@ -8,6 +6,9 @@ int[] unsortedArray;
 int[] array;
 Dictionary<string, long> algoTimes = new Dictionary<string, long>();
 
+/// <summary>
+/// Initialise unsorted array with random integers.
+/// </summary>
 void Setup() {
     Random random = new Random();
 
@@ -19,10 +20,16 @@ void Setup() {
     }
 }
 
+/// <summary>
+/// Reset the in use array to the inital random values.
+/// </summery>
 void ResetArray() {
     Array.Copy(unsortedArray, array, unsortedArray.Length);
 }
 
+/// <summary>
+/// Displays the contents of the working array to the screen.
+/// </summary>
 void DisplayArray<T>(T[] array) {
     foreach(var i in array){
         Console.Write($" {i}, ");
@@ -30,6 +37,11 @@ void DisplayArray<T>(T[] array) {
     Console.WriteLine();
 }
 
+/// <summary>
+/// Message to be displayed at the start of a sorting algorithms execution.
+/// </summery>
+/// <typeparam name="string"></typeparam>
+/// <param name="algorithm"></param>
 void DisplayStartMessage(string algorithm) {
     Console.WriteLine($"----{algorithm}----");
     //Console.WriteLine($"Unsorted array: ");
@@ -38,6 +50,11 @@ void DisplayStartMessage(string algorithm) {
     Console.WriteLine($"Sorting {arraySize} items with {algorithm}...");
 }
 
+/// <summary>
+/// Message to be displayed at the end of a sorting algorithms execution.
+/// </summary>
+/// <typeparam name="long"></typeparam>
+/// <param name="elapsedTime"></param>
 void DisplayEndMessage(long elapsedTime) {
     Console.WriteLine("Sorted");
     //Console.WriteLine($"Sorted array: ");
@@ -46,6 +63,9 @@ void DisplayEndMessage(long elapsedTime) {
     Console.WriteLine();
 }
 
+/// <summary>
+/// Displays a summary of all the executed sorting algorithms and their completion times.
+/// </summary>
 void DisplaySummary() {
     Console.WriteLine($"Number of items to sort: {arraySize}");
     foreach (var kv in algoTimes){
@@ -53,6 +73,13 @@ void DisplaySummary() {
     }
 }
 
+/// <summary>
+/// Updates sorting algorithm times for use in the summary.
+/// </summary>
+/// <typeparam name="string"></typeparam>
+/// <param name="algoName"></param>
+/// <typeparam name="long"></typeparam>
+/// <param name="time"></param>
 void UpdateAlgoTimes(string algoName, long time) {
     algoTimes.Add(algoName, time);
 }
