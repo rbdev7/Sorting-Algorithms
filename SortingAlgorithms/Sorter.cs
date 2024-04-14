@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-
 namespace SortingAlgorithms;
 
 public class Sorter
