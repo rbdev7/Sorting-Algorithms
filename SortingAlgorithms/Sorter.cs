@@ -32,6 +32,7 @@ public class Sorter
         }
     }
 
+#region QuickSort
     // Quick Sort
     /// <summary>
     /// <para>Description: Quick sort is a divide-and-conquer algorithm that selects a pivot element and partitions the array into two subarrays (elements less than the pivot and elements greater than the pivot).
@@ -73,7 +74,9 @@ public class Sorter
         Swap(ref arr[i + 1], ref arr[high]);
         return i + 1;
     }
+#endregion
 
+#region Heap And Selection Sort
     // Heap Sort
     /// <summary>
     /// <para>Average-case performance:
@@ -166,6 +169,7 @@ public class Sorter
         a = b;
         b = temp;
     }
+#endregion
 
     /// <summary>
     /// <para>Description:
@@ -198,6 +202,7 @@ public class Sorter
         }
     }
 
+#region MergeSort
     // Merge Sort
     /// <summary>
     /// <para>Description: Merge sort divides the array into halves, recursively sorts each half, and then merges the sorted halves.</para>
@@ -271,6 +276,6 @@ public class Sorter
             mergedIndex++;
         }
     }
-
+#endregion
     
 }
