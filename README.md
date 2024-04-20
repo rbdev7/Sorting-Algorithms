@@ -54,8 +54,8 @@ Algorithm: C Sharp Sort, Time: 37ms
 ![A graph depicting sorting algorithm execution times](Docs/Sorting_Algorithm_Times.png)
 
 ## Conclusion
-This project implemented several sorting algorithms and compaired their execution times.  The implemented sorting algorithms were also compaired to the built in Array.Sort() in C#.
+This project implemented several sorting algorithms and compared their execution times.  The implemented sorting algorithms were also compared to the built in Array.Sort() in C#.
 
-Overall the built in sort in C# performed the best.  This could be due to it's implemnetation of using three sorting algorithms and selecting eaither Insersion Sort if the array is 16 items or less, Heap Sort if the number of partitions exceeds 2 * Log^N, or Quicksort.  [See Microsoft documentation for further details](https://learn.microsoft.com/en-us/dotnet/api/system.array.sort?view=net-8.0#system-array-sort(system-array)).  There will also be optimisations that the team at Microsoft has implemented.
+Overall the built in sort in C# performed the best.  This could be due to it's implementation of using three sorting algorithms and selecting either Insertion Sort if the array is 16 items or less, Heap Sort if the number of partitions exceeds 2 * Log^N, or Quicksort.  [See Microsoft documentation for further details](https://learn.microsoft.com/en-us/dotnet/api/system.array.sort?view=net-8.0#system-array-sort(system-array)).  There will also be optimisations that the team at Microsoft has implemented.
 
 In short it is best for most cases to use the built in sort function that comes with C#.
